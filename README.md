@@ -2,7 +2,7 @@
 
 ## Server Configuration
 
-First of all, don't forget to configure your **database** (look into the resource folder the schema), the sql file was generated to use MySQL or MariaDB.
+First of all, don't forget to configure your **database**.
 
 ### Installing Dependencies
 
