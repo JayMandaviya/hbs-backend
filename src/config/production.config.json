@@ -1,0 +1,47 @@
+{
+    "App": {
+        "Name": "api.hbs.com",
+        "Version": "1.0.0"
+    },
+    "Jwt": {
+        "secret": "T=_afU=bJq[p%Z6S",
+        "audience": "users.api.hbs.local",
+        "issuer": "api.hbs.local",
+        "jwtid": "jwt.api.hbs.local",
+        "subject": "hbs.local"
+    },
+    "Server": {
+        "Port": 1337,
+        "Name": "api.hbs.local",
+        "DefaultVersion": "1.0.0",
+        "Acceptable": [ "application/json" ],
+        "ThrottleRate": 50,
+        "ThrottleBurst": 100
+    },
+    "DB": {
+        "name": "hbs",
+        "username": "root",
+        "password": "Root_12345",
+        "config": {
+            "host": "localhost",
+            "port": 3306,
+            "dialect": "mysql",
+            "logging": false,
+            "pool": {
+                "max": 10,
+                "min": 0,
+                "idle": 10000
+            },
+            "define": {
+                "timestamps": false
+            }
+        }
+    },
+    "Logging": {
+        "Name": "hbs-log",
+        "Dir": "./logs/"
+    },
+    "Key": {
+        "Path": "/home/public/hbs/server/server.key"
+    }
+}
